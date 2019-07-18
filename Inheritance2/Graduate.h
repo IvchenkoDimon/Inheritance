@@ -15,4 +15,4 @@ public:
 	//			Methods:
 	void info();
 };
-ostream& operator<<(ostream& os, Graduate& obj);
+ostream& operator<<(ostream& os, const Graduate& obj);

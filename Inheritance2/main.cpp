@@ -17,7 +17,7 @@ void main()
 	//durko.info();
 	cout << durko << endl;
 	cout << delimiter;
-	Teacher pablo("Pablo Escobar", 40, "Распространение наркотиков", 25, 50);
+	Teacher pablo("Pablo Escobar", 40, "Массовое производство наркотиков", 25, 50);
 	//pablo.info();
 	cout << pablo << endl;
 	cout << delimiter;
