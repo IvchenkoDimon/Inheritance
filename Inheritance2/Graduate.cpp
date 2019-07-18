@@ -36,6 +36,6 @@ void Graduate::info()
 }
 ostream& operator<<(ostream& os, const Graduate& obj)
 {
-	os << (Student)obj;
+	os << (Student&)obj;
 	return os << "Тема дипломного проекта: " << obj.get_diploma_theme() << endl;
 }

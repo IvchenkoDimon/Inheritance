@@ -6,6 +6,7 @@ using namespace std;
 
 class Human
 {
+protected:
 	string name;
 	unsigned int age;
 public:
@@ -16,7 +17,7 @@ public:
 	Human(string name, unsigned int age);
 	~Human();
 	//			Methods:
-	void info();
+	virtual void info() = 0;
 };
 
 ostream& operator<<(ostream& os, const Human& obj);
