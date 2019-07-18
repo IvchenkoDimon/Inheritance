@@ -19,5 +19,4 @@ public:
 	void info();
 	
 };
-
 ostream& operator<<(ostream& os, Teacher& obj);

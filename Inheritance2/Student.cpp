@@ -1,6 +1,6 @@
 #include "Student.h"
 
-
+//#define DEBUG
 
 const string& Student::get_specialty() const
 {
@@ -27,11 +27,7 @@ int Student::set_karma(int karma)
 	return this->karma = karma;
 }
 //				Constructors:
-Student::Student
-(
-	const string& name, unsigned int age,
-	const string& specialty, unsigned int year, int karma
-) :Human(name, age)
+Student::Student(const string& name, unsigned int age,const string& specialty, unsigned int year, int karma) :Human(name, age)
 {
 	this->specialty = specialty;
 	this->year = year;
@@ -54,10 +50,9 @@ void Student::info()
 	Human::info();
 	cout << "Cпециальность: " << specialty << " " << year << "-й курс, успеваемость " << karma << "!" << endl;
 }
-
 ostream & operator<<(ostream & os, const Student & obj)
 {
 	// TODO: insert return statement here
 	os << (Human)obj;
-	return os << "Специальность: " << obj.get_specialty() << " " << obj.get_year() << "-й курс, успеваемость " << obj.get_karma() << "!" << endl;
+	return os << endl << "Специальность: " << obj.get_specialty() << " " << obj.get_year() << "-й курс, успеваемость " << obj.get_karma() << "!" << endl;
 }
